@@ -1,0 +1,72 @@
+Questão 1
+A=[]
+for i in range(5):
+    A.append(int(input(f"Digite o (i+1)º valor de A:")))
+B = []
+for i in range (5):
+     B.append(A[i] * 3)
+print("Vetor B:",B)
+
+Questão 2
+def fatorial(n):
+    fat = 1
+    for i in range(1, n+1):
+        fat *= i
+    return fat
+A = []
+for i in range(6):
+    A.append(int(input(f"Digite o (i+1)º valor de A: ")))
+B = []
+for i in  range(6):
+    B.append(fatorial(A[i]))
+print("Vetor B:", B)
+
+Questão 3
+A = []
+B = []
+for i in range (5):
+    A.append(int(input(f"Digite o (i+1)valor de A:")))
+for i in range(5):
+    B.append(int(input(f"Digite o (i+1)valor de B:")))
+C = []
+for i in range(5):
+    C.append(A[i] - B[i])
+print("Vetor C:",C)
+
+Questão 4
+A = []
+B = []
+for i in range (5):
+    A.append(int(input(f"Digite o (i+1)valor de A:")))
+for i in range(5):
+    B.append(int(input(f"Digite o (i+1)valor de B:")))
+C = A + B
+print("Vetor C:", C)
+
+Questão 5
+A = []
+B = []
+for i in range (20):
+    A.append(int(input(f"Digite o (i+1)valor de A:")))
+for i in range(30):
+    B.append(int(input(f"Digite o (i+1)valor de B:")))
+C = A + B
+print("Vetor C:", C)
+
+Questão 6
+A = []
+for i in range (8):
+    A.append(int(input(f"Digite o (i+1)valor de A:")))
+B = []
+for i in range(8):
+    B.append(A[i] ** 2)
+print("Vetor B:", B)
+
+Questão 7
+A = []
+for i in range (10):
+    A.append(int(input(f"Digite o (i+1)valor de A:")))
+B = []
+for i in range(10):
+    B.append(A[9 - i])
+print("Vetor B (invertido):", B)
